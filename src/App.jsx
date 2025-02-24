@@ -10,7 +10,7 @@ const API_URL = `https://www.omdbapi.com/?apikey=${API_KEY}`;
 
 function App() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedType, setSelectedType] = useState(""); // Добавили тип (movie/series)
+  const [selectedType, setSelectedType] = useState(""); 
   const [movies, setMovies] = useState([]);
   const [error, setError] = useState("");
 
@@ -28,7 +28,7 @@ function App() {
         let url = `${API_URL}&s=${searchQuery}`;
         
         if (selectedType) {
-          url += `&type=${selectedType.toLowerCase()}`; // Добавляем тип
+          url += `&type=${selectedType.toLowerCase()}`; 
         }
 
         const response = await fetch(url);

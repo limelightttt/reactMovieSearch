@@ -3,7 +3,7 @@ import "../styles/SearchBar.css";
 
 function SearchBar({ onSearch }) {
   const [query, setQuery] = useState("");
-  const [type, setType] = useState(""); // Теперь это тип (movie/series)
+  const [type, setType] = useState(""); 
 
   const handleSubmit = (e) => {
     e.preventDefault();

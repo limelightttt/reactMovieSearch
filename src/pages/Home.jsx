@@ -8,14 +8,14 @@ function Home({ movies, error, loading }) {
 
       <div className="movies">
         {loading
-          ? // Показываем 8 скелетонов во время загрузки
+          ? 
             [...Array(8)].map((_, index) => (
               <div key={index} className="movie skeleton">
                 <div className="skeleton-image"></div>
                 <div className="skeleton-text"></div>
               </div>
             ))
-          : // Показываем фильмы, если они загружены
+          : 
             movies.map((movie) => (
               <div key={movie.imdbID} className="movie">
                 <Link to={`/movie/${movie.imdbID}`}>
