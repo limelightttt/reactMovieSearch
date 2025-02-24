@@ -1,0 +1,111 @@
+/* Общий стиль */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #121212;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Заголовок */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+/* Поиск */
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input,
+select,
+button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+input {
+  width: 250px;
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+select {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+button {
+  background-color: #ffcc00;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #e6b800;
+}
+
+/* Сетка фильмов */
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Карточка фильма */
+.movie {
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.movie:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+/* Постер */
+.movie img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Название фильма */
+.movie h3 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #ffcc00;
+}
+
+/* Ошибки */
+.error-box {
+  background: #ff3b3b;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px auto;
+  max-width: 600px;
+  font-weight: bold;
+}
